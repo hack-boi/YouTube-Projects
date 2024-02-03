@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>3D Box Game</title>
+	<link rel="stylesheet" href="./style.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+	<div id="heading">
+		<h1 class="h1-heading">3D-Box Game</h1>
+	</div>
+
+	<div class="overlay">
+		<button id="reset-button">Reset</button>
+	</div>
+
+	<div id="score-container">
+		<div id="score">Score: 0</div>
+		<div id="highscore">High Score: 0</div>
+	</div>
+
+	<script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+	<script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.150.1/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@0.150.1/examples/jsm/"
+        }
+      }
+    </script>
+
+	<script type="module" src="./script.module.js"></script>
+</body>
+
+</html>
